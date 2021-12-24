@@ -35,7 +35,7 @@ int main()
     int m;
     cin >> m;
 
-    cout << m;
+    cout << m << endl;
 
     float f1 = 35e3;
     double d1 = 12E4;
@@ -52,6 +52,22 @@ int main()
     cout << a << endl; //ascii values
     cout << b << endl;
     cout << c << endl;
+
+
+    cout << "\n\n\n\nI want to separate this";
+    string myString = "Hello";
+    cout << myString[0] << endl;
+    // Outputs H
+
+
+    string test2;
+    cout << "Put in a string: ";
+    cin >> test2;
+    cout << endl;
+
+    cout << "You put in: " << test << endl;
+
+
 
     return 0;
 }
