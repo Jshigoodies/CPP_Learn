@@ -4,6 +4,7 @@ using namespace std;
 
 int main()
 {
+    /*
     string test = "hi";
     cout << "Hello world!\n";
     cout << "Next Line!" << endl;
@@ -12,11 +13,7 @@ int main()
 
     int num = 15;
     //comments
-    /*
-    multi
-    line
-    comments
-    */
+
     cout << num;
 
     cout << " String added with a integer variable: " << num << endl;
@@ -67,7 +64,22 @@ int main()
 
     cout << "You put in: " << test << endl;
 
+    string fullName;
+    cout << "Type your full name: ";
+    getline (cin, fullName);
+    cout << "Your name is: " << fullName;
 
+    cout << max(5, 10)
 
+    bool t = true //output is 1
+    */
+
+    string list[3] = {"first", "second", "third"};
+    cout << list[0] <<endl;
+
+    string value = "value";
+    string* ptr = &value;
+    cout << ptr << endl;
+    cout << value << endl;
     return 0;
 }
