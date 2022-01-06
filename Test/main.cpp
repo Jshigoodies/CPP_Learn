@@ -2,6 +2,27 @@
 #include <string>
 using namespace std;
 
+void myFunction()
+{
+    cout << "executed a function" << endl;
+}
+
+class MyClass{
+  public:
+    //instance variables here
+    int myNum;
+    string myString;
+
+    //constructor
+    MyClass(int num, string myS){
+        myNum = num;
+        myString = myS;
+    }
+    void method(){
+        cout << "run my method" << endl;
+    }
+};
+
 int main()
 {
     /*
@@ -79,7 +100,14 @@ int main()
 
     string value = "value";
     string* ptr = &value;
+    // the %variable saves memory. So you should do that and get used to it. But of course you don't have to.
     cout << ptr << endl;
     cout << value << endl;
+
+    myFunction();
+
+    MyClass obj = MyClass(1, "hi");
+    cout << obj.myNum << " " << obj.myString << endl;
+    obj.method();
     return 0;
 }
